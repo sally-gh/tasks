@@ -22,7 +22,6 @@ Route::post('delete/{id}', [TaskController::class,'delete']);
 Route::post('update/{id}', [TaskController::class,'update']);
 
 
-
 // Route::get('app', function(){
 //   return view('layout.app');
 // });

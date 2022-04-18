@@ -65,10 +65,14 @@
 
                                 <!-- Task Update Button -->
                                 <td>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="name" id="" class="form-control" value="{{$task->name}}">
+                                    </div>
                                     <form action="{{url('update/'.$task->id)}}" method="POST">
                                         @csrf
+                                        <input type="hidden" name="id" value="{{$task->id}}">
                                         <button type="submit" class="btn btn-info">
-                                            <i class="fa fa-btn fa-info"></i>Update
+                                          <i class="fa fa-btn fa-info"></i> Update
                                         </button>
                                     </form>
                                 </td>
